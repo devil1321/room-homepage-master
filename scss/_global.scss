@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
+.d-flex {
+    display: flex;
+}
+
+.js-c-sb {
+    justify-content: space-between;
+}
+
+.js-c-c {
+    justify-content: center;
+}
+
+.js-c-sa {
+    justify-content: space-around;
+}
+
+.al-i-sb {
+    align-items: space-between;
+}
+
+.al-i-c {
+    align-items: center;
+}
+
+.al-i-sa {
+    align-items: space-around;
+}
+
+.text-px {
+    padding: 0rem 2.3125rem;
+}
+
+.btn {
+    letter-spacing: 10px;
+    width: 14.5625rem;
+    height: 1rem;
+    background-image: url('../../images/icon-arrow.svg');
+    background-size: 2.5rem;
+    background-position: 12.0625rem -1px;
+    background-repeat: no-repeat;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.7
+    }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: $font-fam;
+    font-size: $font-sm;
+    color: $black;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}

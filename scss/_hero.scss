@@ -1,0 +1,90 @@
+.hero {
+    &__carousel {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        @include breakpoint-up(large) {
+            display: flex;
+        }
+    }
+    &__image {
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 22.625rem;
+        @include breakpoint-up(large) {
+            width: 52.5rem;
+            height: 33.75rem;
+            background-image: url('../../images/desktop-image-hero-1.jpg');
+        }
+    }
+    &__btn-wrapper {
+        position: absolute;
+        top: 19.125rem;
+        right: 0px;
+        width: 8.21875rem;
+        @include breakpoint-up(large) {
+            left: 41.9rem;
+            top: 30.25rem;
+        }
+    }
+    &__btn {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4.109375rem;
+        height: 3.5rem;
+        background-color: $black;
+        &:hover {
+            background-color: $veryDarkGray;
+        }
+    }
+    &__text {
+        padding-top: 3.3125rem;
+        padding-bottom: 4.75rem;
+        @include breakpoint-up(large) {
+            width: 600px;
+            padding: 7.8125rem 6.25rem;
+        }
+    }
+    &__text-title {
+        font-size: 1.375rem;
+        @include breakpoint-up(large) {
+            width: 90%;
+            font-size: 2.25rem;
+        }
+    }
+    &__description {
+        margin: 1.625rem 0rem 3.75rem;
+        line-height: 2;
+    }
+    &__grid {
+        width: 100%;
+        @include breakpoint-up(large) {
+            display: flex;
+        }
+    }
+    &__grid-image {
+        display: block;
+        height: 14.8125rem;
+        margin: 0px auto;
+        @include breakpoint-up(large) {
+            width: 25%;
+            height: 100%;
+        }
+    }
+    &__grid-text {
+        padding-top: 3.75rem;
+        padding-bottom: 3.75rem;
+        @include breakpoint-up(large) {
+            padding: 2.6875rem 3.125rem;
+        }
+    }
+    &__grid-title {
+        font-size: $font-sm;
+    }
+}

@@ -1,0 +1,65 @@
+@keyframes nav-open {
+    0% {
+        overflow: hidden;
+        width: 0%;
+    }
+    100% {
+        overflow: hidden;
+        width: 100%;
+    }
+}
+
+.nav-open {
+    animation-name: nav-open;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav-close {
+    0% {
+        overflow: hidden;
+        width: 100%;
+    }
+    100% {
+        overflow: hidden;
+        width: 0%;
+    }
+}
+
+.nav-close {
+    animation-name: nav-close;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes title-open {
+    0% {
+        opacity: 0;
+        width: 100%;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.title-open {
+    animation-name: title-open;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes carousel {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.carousel {
+    animation: carousel 1s ease-in-out forwards;
+}
