@@ -1,4 +1,5 @@
 .hero {
+    max-width: 100vw;
     &__carousel {
         position: relative;
         top: 0px;
@@ -60,7 +61,7 @@
     }
     &__description {
         margin: 1.625rem 0rem 3.75rem;
-        line-height: 2;
+        line-height: 2;     
     }
     &__grid {
         width: 100%;
@@ -70,12 +71,16 @@
     }
     &__grid-image {
         display: block;
-        height: 14.8125rem;
         margin: 0px auto;
+        width: 100%;
         @include breakpoint-up(large) {
             width: 25%;
             height: 100%;
         }
+        @include breakpoint-up(medium) {
+            width: 45rem;
+        }
+        
     }
     &__grid-text {
         padding-top: 3.75rem;

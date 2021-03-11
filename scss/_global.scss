@@ -28,7 +28,7 @@
 }
 
 .text-px {
-    padding: 0rem 2.3125rem;
+    padding: 0rem 1.6125rem;
 }
 
 .btn {
@@ -56,6 +56,7 @@ body {
     font-family: $font-fam;
     font-size: $font-sm;
     color: $black;
+    overflow-x: hidden;
 }
 
 h1 {
